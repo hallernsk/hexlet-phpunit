@@ -10,7 +10,7 @@ class UserTest extends TestCase
     public function testGetName(): void
     {
         $name = 'john';
-        $children = [new User('Mark')];
+        $children = [new User('Mark'), new User('Kate')];
         $user = new User($name, $children);
 
         $this->assertEquals($name, $user->getName());
