@@ -15,8 +15,7 @@ class UtilsTest extends TestCase
     // public – чтобы PHPUnit мог вызвать этот тест снаружи
     public function testReverse(): void
     {
-        // Сначала идет ожидаемое значение (expected)
-        // И только потом актуальное (actual)
+        // Сначала идет ожидаемое значение (expected), потом актуальное (actual)
         $this->assertEquals('', reverseString(''));
         $this->assertEquals('olleh', reverseString('hello'));
     }
